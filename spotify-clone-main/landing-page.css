@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('images/watermarkimg-transformed.jpg');
+
+    background-size: 100 100;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.left {
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+.mid {
+    /* border: 2px solid green; */
+    display: block;
+    width: 60%;
+    padding: auto 100px auto auto;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 450px;
+    justify-content: sp;
+
+}
+
+.right {
+    /* border: 2px solid yellow; */
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.navbar {
+    display: inline-block;
+
+
+}
+
+.navbar li {
+    color: white;
+    display: inline-block;
+    /* font-size: 17px; */
+    padding: 0px 50px;
+}
+
+.navbar li a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    /* padding: 34px 23px; */
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: aliceblue;
+    /* padding: 34px 23px; */
+}
+
+.left img {
+    width: 100px;
+}
+
+.login {
+    margin: 0px 9px;
+    background-color: white;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: lightgreen;
+}
+
+.signup {
+    margin: 0px 9px;
+    background-color: white;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: lightgreen;
+}
+
+.container1 {
+    /* border: 2px solid green; */
+    margin-left: 360px;
+    margin-top: 200px;
+    border-radius: 2px;
+    color: aliceblue;
+    /* font-size: 90px; */
+}
+
+.c1 {
+    font-size: 90px;
+    margin-left: 30px;
+}
+
+.c2 {
+    font-size: 40px;
+    margin-left: 140px;
+    margin-top: -78px;
+}
+
+.container2 {
+    /* border: 2px solid green; */
+    margin-bottom: 500px;
+    width: 100%;
+    border-radius: 2px;
+    color: aliceblue;
+    /* font-size: 40px; */
+}
+
+.p1 {
+    color: white;
+    margin-left: 28px;
+    margin-top: -40px;
+}

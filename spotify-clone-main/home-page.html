@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="home-page.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="sidebar">
+	<div class="logo">
+	  <a href="#">
+		<img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+	  </a>
+	</div>
+
+	<div class="navigation">
+	  <ul>
+		<li>
+		  <a href="#">
+			<span class="fa fa-home"></span>
+			<span>Home</span>
+		  </a>
+		</li>
+
+		<li>
+		  <a href="#">
+			<span class="fa fa-search"></span>
+			<span>Search</span>
+		  </a>
+		</li>
+
+		<li>
+		  <a href="#">
+			<span class="fa fas fa-book"></span>
+			<span>Your Library</span>
+		  </a>
+		</li>
+	  </ul>
+	</div>
+
+	<div class="navigation">
+	  <ul><
+			<span>Create Playlist</span>
+		  </a>
+		</li>
+
+		<li>
+		  <a href="#">
+			<span class="fa fas fa-heart"></span>
+			<span>Liked Songs</span>
+		  </a>
+		</li>
+	  </ul>
+	</div>
+  </div>
+
+  <div class="main-container">
+	<div class="topbar">
+	  <div class="prev-next-buttons">
+		<button type="button" class="fa fas fa-chevron-left"></button>
+		<button type="button" class="fa fas fa-chevron-right"></button>
+	  </div>
+
+	  <div class="navbar">
+		<ul>
+			<li>
+				<select id="suggestions" style="width:200px;height:40px;border-radius: 60px;text-align: center;" class="babarupya">
+					<option value="songs\Aathma Rama.mp3">Aathma Rama</option>
+					<option value="songs/Alan-Walker-The-Spectre.mp3">The Spectre</option>
+					<option value="songs/Alone.mp3">Alone</option>
+					<option value="songs\Bin Tere.mp3">Bin Tere</option>
+					<option value="songs\Can-you-feel-my-heart.mp3">Can you feel my heart</option>
+					<option value="songs\Dhoom Again.mp3">Dhoom Again</option>
+					<option value="songs\Dil Haara.mp3">Dil Haara</option>
+					<option value="songs\Murder-in-my-mind.mp3">Murder in my mind</option>
+					<option value="songs\ram-siya-ram.mp3">Ram Siya Ram</option>
+					<option value="songs\Tere Pyaar Mein.mp3">Tere Pyaar Mein</option>
+					<option value="songs\the-score-legend.mp3">Legend</option>
+					<option value="songs\Varyavarti Gandh.mp3">Varyavarti Gandh</option>
+				</select>
+				<!-- <input id="search-bar" type="text" autocomplete="on" list="suggestions"> -->
+			</li>
+		  <li>
+			<!-- <button type="button"><a href="login.html">Sign In</a></button> -->
+		  </li>
+		</ul>
+		<button type="button" onclick="playSong(document.getElementById('suggestions').value)">Play Song</button>
+		<button type="button"><a href="login.html" style="color: black; text-decoration: none;">Sign In</a></button>
+		<button type="button"><a href="register.html" style="color: black; text-decoration: none;">Sign Up</a></button>
+	  </div>
+	</div>
+
+	<div class="spotify-playlists">
+	  <h2>Spotify Playlists</h2>
+
+	  <div class="list">
+		<div id="sp-1" class="item" onclick="setAudio('songs/Alan-Walker-The-Spectre.mp3')">
+		  <img src="images/AlanWalker.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Dance/Electronic Mix</h4>
+		  <p>Alan Walker, Aaron Smith, Alok</p>
+		</div>
+
+		<div id="sp-2" class="item" onclick="setAudio('songs/Bin Tere.mp3')">
+		  <img src="images/Vishal-Shekher.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Daily Mix 6</h4>
+		  <p>Vishal-Shekhar, Pritam, Yo Yo Honey Singh</p>
+		</div>
+
+		<div id="sp-3" class="item" onclick="setAudio('songs/Varyavarti Gandh.mp3')">
+		  <img src="images/Kunal.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>2000s Mix</h4>
+		  <p>Kunal Ganjawala, Vishal-Shekhar, Sonu Nigam</p>
+		</div>
+
+		<div id="sp-4" class="item" onclick="setAudio('songs/Dhoom Again.mp3')">
+		  <img src="images/Pritam.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Daily Mix 3</h4>
+		  <p>Pritam, Monty Sharma, Vishal-Shekhar and more</p>
+		</div>
+
+		<div id="sp-5" class="item" onclick="setAudio('songs/the-score-legend.mp3')">
+		  <img src="images/ImagineD.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Daily Mix 5</h4>
+		  <p>Imagine Dragons, The Score, Anson Seabra and more</p>
+		</div>
+
+		<div id="sp-6" class="item" onclick="setAudio('songs/ram-siya-ram.mp3')">
+		  <img src="images/sachet.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Daily Mix 2</h4>
+		  <p>Sachet Tandon, Zaeden, Tanzeel Khan and more</p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="spotify-playlists">
+	  <h2>Recommended</h2>
+	  <div class="list">
+		<div id="r-1" class="item" onclick="setAudio('songs/Dil Haara.mp3')">
+		  <img src="images/Sukh.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Hindi Mix</h4>
+		  <p>Sukhwinder Singh, Javed Ali, Narci and more</p>
+		</div>
+
+		<div id="r-2" class="item" onclick="setAudio('songs/Aathma Rama.mp3')">
+		  <img src="images/Brodha.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Kannada Mix</h4>
+		  <p>Brodha V and more</p>
+		</div>
+
+		<div id="r-3" class="item" onclick="setAudio('songs/Tere Pyaar Mein.mp3')">
+		  <img src="images/Pritam2.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Romantic Mix</h4>
+		  <p>Pritam, Ritviz, Kunal Ganjawala and more</p>
+		</div>
+
+		<div id="r-4" class="item" onclick="setAudio('songs/Can-you-feel-my-heart.mp3')">
+		  <img src="images/Rajesh.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>2010s Mix</h4>
+		  <p>Rajesh Murugesan, Parth S. Bhalerao, Bring Me The Horizon and more</p>
+		</div>
+
+		<div id="r-5" class="item" onclick="setAudio('songs/Murder-in-my-mind.mp3')">
+		  <img src="images/Kordhell.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Kordhell Mix</h4>
+		  <p>INTERWORLD, g3ox_em and more</p>
+		</div>
+
+		<div id="r-6" class="item" onclick="setAudio('songs/Alone.mp3')">
+		  <img src="images/EdSheeran.png" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Dail Mix 4</h4>
+		  <p>Ed Sheeran, Marshmello, Knock2 and more</p>
+		</div>
+	  </div>
+	</div>
+
+	<div id="playbar-div" class="">
+		<audio id="playbar" controls autoplay></audio>
+	</div>
+
+	<!-- <div class="spotify-playlists">
+	  <h2>Mood</h2>
+	  <div class="list">
+		<div class="item">
+		  <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Mood Booster</h4>
+		  <p>Get happy with today's dose of feel-good...</p>
+		</div>
+
+		<div class="item">
+		  <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Feelin' Good</h4>
+		  <p>Feel good with this positively timeless...</p>
+		</div><f9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Dark & Stormy</h4>
+		  <p>Beautifully dark, dramatic tracks.</p>
+		</div>
+
+		<div class="item">
+		  <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Feel Good Piano</h4>
+		  <p>Happy vibes for an upbeat morning.</p>
+		</div>
+
+		<div class="item">
+		  <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Feelin' Myself</h4>
+		  <p>The hip-hop playlist that's a whole mood...</p>
+		</div>
+
+		<div class="item">
+		  <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+		  <div class="play">
+			<span class="fa fa-play"></span>
+		  </div>
+		  <h4>Chill Tracks</h4>
+		  <p>Softer kinda dance</p>
+		</div>
+	  </div>
+
+	  <hr>
+	</div> -->
+
+	<!-- <div class="preview">
+	  <div class="text">
+		<h6>Preview of Spotify</h6>
+		<p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+	  </div>
+	  <div class="button">
+		<button type="button">Sign up free</button>
+	  </div>
+	</div> -->
+  </div>
+
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
